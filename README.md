@@ -36,6 +36,8 @@ Hello world     # String
 False           # Boolean
 ```
 
+**When you provide a value containing special characters that you want to be treated as text, you must surround it with single or double quotes**
+
 ### Collections
 Collections are use to group zero or more elements, there are two types of collections: _sequences_ and _mappings_. A collection can include other collections allowing the creation of more complex hierarchical structures.
 
@@ -109,3 +111,29 @@ Use a text editor with good support for YAML documents, a very popular option is
 
 [vscode]: https://code.visualstudio.com/
 [RedHat's YAML extension]: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
+
+
+## More Examples
+
+Mapping, sequence, mapping
+```yaml
+name: Rick Brown
+age: 71
+sons: 
+	- name: Ted Silver
+  	age: 42
+  	sons:
+    	- name: Bob Boot
+      	age: 10
+```
+Sequence, mapping, sequence
+```yaml
+- user: bob
+	scores:
+    - 40
+    - 18
+    - 200
+
+- user: "{joe}"
+	scores: [700, 99]
+```
