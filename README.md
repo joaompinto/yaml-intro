@@ -120,20 +120,20 @@ Mapping, sequence, mapping
 name: Rick Brown
 age: 71
 sons: 
-	- name: Ted Silver
-  	age: 42
-  	sons:
-    	- name: Bob Boot
-      	age: 10
+  - name: Ted Silver
+    age: 42
+    sons:
+      - name: Bob Boot
+        age: 10
 ```
 Sequence, mapping, sequence
 ```yaml
 - user: bob
-	scores:
-    - 40
-    - 18
-    - 200
+  scores:
+  - 40
+  - 18
+  - 200
 
 - user: "{joe}"
-	scores: [700, 99]
+  scores: [700, 99]
 ```
