@@ -8,7 +8,7 @@ YAML is a flexible, human readable text based format that is widely used on comp
 YAML provides three main kind of elements: comments, scalars and collections
 
 ### Comments
-The hash _("#")_symbol placed at the start of a line, or into an unquoted string will set all the remaining content as a comment. Comments are not actual date, they are removed when the data is processed, they usually provide some auxiliary description.
+The hash _("#")_symbol placed at the start of a line, or into an unquoted string will set all the remaining content as a comment. Comments are not actual data, they are removed when the data is processed, they usually provide some auxiliary description.
 
 Comment examples:
 ```yaml
@@ -91,19 +91,6 @@ Mapping flow example 1:
 Mapping flow example 2:
 ```yaml
 { S: Small, M: Medium, L: Large, XL: Extra large }
-```
-
-Mapping gives you the ability to list keys with values, 
-
-A sequence is an ordered list of elements, it can be defined by starting a line using a dash followed by a space `«- »`, the remaining content of that line is interpreted as the list element. Each consecutive line started with the `«- »` placed at the same position will be used to provide additional elements to the list.
-
-Sequence example:
-```yaml
-- Banana
-# Comments do not break sequences
-- Apple
-# A sequence can have elements from different types
-- 3.12
 ```
 
 ## Basic Rule
